@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('back.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    font-size: 25px;
+    color: #cf43c1;
+}
+
+.gif-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.gif-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+button {
+    padding: 15px 30px; /* Increase padding to make the buttons larger */
+    font-size: 18px; /* Increase the font size */
+    background-color: #e91e63; /* Heart-related color */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Slightly rounder corners to match the bigger size */
+    cursor: pointer;
+    margin: 0 50px; /* Increased space between the buttons */
+}
+
+#teleportButton {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 20px;
+    position: relative;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+#teleportButton:hover {
+    transform: translate(100px, 50px); /* Move the button by a set amount when hovered */
+}
+
+#teleportButton.teleport {
+    transform: translate(200px, 150px); /* New location after clicking */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.button-container {
+    margin-top: 100px; /* Push the buttons lower */
+}
+
+.gif-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Adjust as needed */
+}
+
+.gif-container2 img {
+    max-width: 100%;
+    height: auto;
+    display: none; /* Hide GIF initially */
+}
